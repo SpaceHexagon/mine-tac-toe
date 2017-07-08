@@ -8,7 +8,7 @@ var player;
     function blowUp (x, y) {
         box = boxes[y][x];
         audio = document.createElement("audio");
-        audio.setAttribute("src", "2cylableExplosion.ogg");
+        audio.setAttribute("src", "app/assets/2cylableExplosion.ogg");
         audio.setAttribute("autoplay", "autoplay");
         audio.setAttribute("style", "display:none;");
         explosion = document.createElement("img");
