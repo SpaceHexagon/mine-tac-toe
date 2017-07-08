@@ -1,0 +1,126 @@
+body {
+        background: rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+        font-family: monospace;
+    }
+
+    .players {
+         position: absolute;
+          top: 0px;
+          left: 0px;
+          padding: 1em;
+          font-size: 1.5em;
+    }
+    .players h2 {
+          display: inline;
+    }
+    #playersSelect {
+        font-size: 1.5em;
+    }
+    .explosion {
+        height: 100%;
+    }
+
+    .container {
+        perspective: 10px -moz-perspective: 10px -webkit-perspective: 10px;
+        -ms-perspective: 10px;
+        font-size: 150%;
+        font-family: arial color: white;
+        text-shadow: 0px 1px 1px black;
+        margin: auto;
+        width: 60%;
+        min-width: 600px;
+    }
+
+    .box {
+        background: rgba(255, 255, 255, 1.0);
+        width: 29%;
+        height: 29%;
+        margin: 1%;
+        padding: 1%;
+        float: left;
+        display: inline-block;
+        box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 1.0);
+        color: white;
+        transition: transform 1s linear;
+        -moz-transition: -moz-transform 1s linear;
+        -webkit-transition: -webkit-transform 1s linear;
+        transform: perspective(450px) rotate3d(1, 0, 0, 10deg);
+        -moz-transform: perspective(450px) rotate3d(1, 0, 0, -10deg);
+        -webkit-transform: perspective(450px) rotate3d(1, 0, 0, -10deg);
+    }
+
+    .tilted {
+        transform: perspective(450px) rotate3d(1, 0, 0, 19deg);
+        -moz-transform: perspective(450px) rotate3d(1, 0, 0, 19deg);
+        -webkit-transform: perspective(450px) rotate3d(1, 0, 0, 19deg);
+    }
+
+    .box:nth-child(4n+3) {
+        /*background:#f00;*/
+        /*transform:rotate3d(0.1,1,0,30deg);
+			-moz-transform:rotate3d(0.1,1,0,30deg);
+			-webkit-transform:rotate3d(0.1,1,0,30deg);
+			-ms-transform:rotate3d(0.1,1,0,30deg);*/
+
+        background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.04) 6%, rgba(0, 0, 0, 0.65) 100%);
+        /* FF3.6+ */
+
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(6%, rgba(0, 0, 0, 0.04)), color-stop(100%, rgba(0, 0, 0, 0.65)));
+        /* Chrome,Safari4+ */
+
+        background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.04) 6%, rgba(0, 0, 0, 0.65) 100%);
+        /* Chrome10+,Safari5.1+ */
+
+        background: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.04) 6%, rgba(0, 0, 0, 0.65) 100%);
+        /* Opera 11.10+ */
+
+        background: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.04) 6%, rgba(0, 0, 0, 0.65) 100%);
+        /* IE10+ */
+
+        background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.04) 6%, rgba(0, 0, 0, 0.65) 100%);
+        /* W3C */
+    }
+
+    .box:nth-child(4n+2) {
+        /*background:#0f0;*/
+        /*transform:rotate3d(0.1,1,0,0deg);
+			-moz-transform:rotate3d(0.1,1,0,0deg);
+			-webkit-transform:rotate3d(0.1,1,0,0deg);
+			-ms-transform:rotate3d(0.1,1,0,0deg);*/
+    }
+
+    .box:nth-child(4n+1) {
+        /*background:#00f;*/
+        /*transform:rotate3d(0.1,1,0,-30deg);
+			-moz-transform:rotate3d(0.1,1,0,-30deg);
+			-webkit-transform:rotate3d(0.1,1,0,-30deg);
+			-ms-transform:rotate3d(0.1,1,0,-30deg);*/
+
+        background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+        /* FF3.6+ */
+
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(100%, rgba(0, 0, 0, 0)));
+        /* Chrome,Safari4+ */
+
+        background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+        /* Chrome10+,Safari5.1+ */
+
+        background: -o-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+        /* Opera 11.10+ */
+
+        background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+        /* IE10+ */
+
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+        /* W3C */
+    }
+
+    input[type="button"] {
+        width: 50%;
+        height: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 25%;
+        font-size: 200%;
+    }
